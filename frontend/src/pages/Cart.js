@@ -160,7 +160,7 @@ const Cart = () => {
                                     <div className='flex items-center gap-3 mt-1'>
                                         <button className='border border-red-600 text-red-600 hover:bg-red-600 hover:text-white w-6 h-6 flex justify-center items-center rounded ' onClick={()=>decraseQty(product?._id,product?.quantity)}>-</button>
                                         <span>{product?.quantity}</span>
-                                        <button className='border border-red-600 text-red-600 hover:bg-red-600 hover:text-white w-6 h-6 flex justify-center items-center rounded ' onClick={()=>increaseQty(product?._id,product?.quantity)}>+</button>
+                                        <button className='border border-dimGreen text-lime-600 hover:bg-blueishGreen hover:text-white w-6 h-6 flex justify-center items-center rounded ' onClick={()=>increaseQty(product?._id,product?.quantity)}>+</button>
                                     </div>
                                 </div>    
                             </div>
@@ -180,18 +180,18 @@ const Cart = () => {
                             </div>
                             ) : (
                                 <div className='h-36 bg-white'>
-                                    <h2 className='text-white bg-red-600 px-4 py-1'>Summary</h2>
+                                    <h2 className='text-white bg-dimGreen px-4 py-1'>Summary</h2>
                                     <div className='flex items-center justify-between px-4 gap-2 font-medium text-lg text-slate-600'>
                                         <p>Quantity</p>
                                         <p>{totalQty}</p>
                                     </div>
 
-                                    <div className='flex items-center justify-between px-4 gap-2 font-medium text-lg text-slate-600'>
+                                    <div className='flex items-center justify-between px-4 gap-2 font-medium text-lg text-slate-600 '>
                                         <p>Total Price</p>
                                         <p>{displayUSDCurrency(totalPrice)}</p>    
                                     </div>
 
-                                    <button className='bg-blue-600 p-2 text-white w-full mt-2'>Payment</button>
+                                    <button className='bg-blueishGreen p-2 text-white w-full mt-2 rounded-3xl'>Make Payment</button>
 
                                 </div>
                             )
