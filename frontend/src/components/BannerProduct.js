@@ -7,10 +7,10 @@ import image5 from '../assest/banner/img5.jpg'
 
 
 import image1Mobile from '../assest/banner/img1_mobile.jpg'
-import image2Mobile from '../assest/banner/img2_mobile.webp'
+import image2Mobile from '../assest/banner/img2_mobile.jpg'
 import image3Mobile from '../assest/banner/img3_mobile.jpg'
 import image4Mobile from '../assest/banner/img4_mobile.jpg'
-import image5Mobile from '../assest/banner/img5_mobile.png'
+import image5Mobile from '../assest/banner/img5_mobile.jpg'
 
 import { FaAngleRight } from "react-icons/fa6";
 import { FaAngleLeft } from "react-icons/fa6";
@@ -63,7 +63,7 @@ const BannerProduct = () => {
     //Displaying a slide show of images on the homepage
   return (
     <div className='container mx-auto px-4 rounded '>
-        <div className='h-56 md:h-72 w-full bg-slate-200 relative'>
+        <div className='h-80 md:h-80 w-full bg-slate-200 relative'>
 
                 <div className='absolute z-10 h-full w-full md:flex items-center hidden '>
                     <div className=' flex justify-between w-full text-2xl'>
